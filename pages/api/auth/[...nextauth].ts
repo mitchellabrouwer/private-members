@@ -32,7 +32,10 @@ export default NextAuth({
       session.user.image = user.image;
       session.user.name = user.name;
       session.user.id = user.id;
+      // @ts-ignore - not picking up types
       session.user.username = user.username;
+      // @ts-ignore - not picking up types
+      session.user.isSubscriber = user.isSubscriber;
       return Promise.resolve(session);
     },
   },
