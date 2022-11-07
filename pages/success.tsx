@@ -22,7 +22,7 @@ export default function Success() {
         },
       });
 
-      window.location.href = "/members";
+      window.location = "/members";
     };
 
     call();
